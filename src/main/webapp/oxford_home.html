@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+        <li><a data-toggle="tab" href="#about">About</a></li>
+        <li><a data-toggle="tab" href="#contactus">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-12 text-left">
+    <div class="tab-content">
+    <div class="tab-pane fade in active" id ="home">
+      <h1>OXFORD SCHOOL ANAVATTI</h1>
+      <div>
+      	<!--  main Carousel  starts -->
+      	<div class="row">
+      	<div id="mainCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#mainCarousel" data-slide-to="1"></li>
+      <li data-target="#mainCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="images/school/school2.jpg" alt="Los Angeles" style="width:100%;">
+         <div class="carousel-caption">
+          <h3><font color="red">Description about image</font></h3>
+          <p>Description about image!</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/school/school2.jpg" alt="Chicago" style="width:100%;">
+         <div class="carousel-caption">
+          <h3><font color="red">Description about image</font></h3>
+          <p>Description about image!</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="images/school/school2.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3><font color="red">Description about image</font></h3>
+          <p>Description about image!</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#mainCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#mainCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+      	</div>
+      	<!-- Carousel  ends -->
+      	
+      
+      </div>
+      
+      <div>
+		<div class="panel-group" id="homePanels">
+			<div class="panel panel-default">
+				<div class="panel-heading">Good Infrastructure
+				<a href="#infra" data-toggle="collapse" data-parent="#homePanels"><span class="caret"></span></a></div>
+				<div class="panel-body collapse" id="infra">
+					<div class="row">
+					<div class="text-left col-sm-4" id="infraDisc">
+      					<!-- infra carousel starts -->
+      					<div id="infraCarousl" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#infraCarousl" data-slide-to="0" class="active"></li>
+      <li data-target="#infraCarousl" data-slide-to="1"></li>
+      <li data-target="#infraCarousl" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="images/school/school2.jpg" alt="Los Angeles" style="width:100%;">
+         <div class="carousel-caption">
+          <h3><font color="red">Description about image</font></h3>
+          <p>Description about image!</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/school/school2.jpg" alt="Chicago" style="width:100%;">
+         <div class="carousel-caption">
+          <h3><font color="red">Description about image</font></h3>
+          <p>Description about image!</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="images/school/school2.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3><font color="red">Description about image</font></h3>
+          <p>Description about image!</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#infraCarousl" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#infraCarousl" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+      					<!-- infra carousel ends -->
+      				</div>
+      				<div class="text-left col-sm-8">
+      					<h1>Description about school infrastructure.....!!!</h1>
+      				</div>
+					</div>				
+				<div class="panel-footer">
+				<h5>Footer content...</h5>
+				</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">Lab
+				<a href="#lab" data-toggle="collapse" data-parent="#homePanels"><span class="caret"></span></a></div>
+				<div class="panel-body collapse" id="lab">
+					<div class="row">
+					<div class="text-left col-sm-4" id="laboratoryDisc">
+      					<img alt="OXFORD SCHOOL" 
+      						src="images/school/WIN_20170415_13_33_51_Pro.jpg" 
+      							class="img-thumnail" width="304" height="236"/>
+      				</div>
+      				<div class="text-left col-sm-8">
+      					<h1>Description about school infrastructure.....!!!</h1>
+      				</div>
+					</div>				
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">Library
+				<a href="#lib" data-toggle="collapse" data-parent="#homePanels"><span class="caret"></span></a></div>
+				<div class="panel-body collapse" id="lib">
+					<div class="row">
+					<div class="text-left col-sm-4" id="libraryDisc">
+      					<img alt="OXFORD SCHOOL" 
+      						src="images/school/WIN_20170415_13_33_51_Pro.jpg" 
+      							class="img-thumnail" width="304" height="236"/>
+      				</div>
+      				<div class="text-left col-sm-8">
+      					<h1>Description about school infrastructure.....!!!</h1>
+      				</div>
+					</div>				
+				</div>
+			</div>
+		</div>
+		</div>
+      <p>School description...................</p>
+      </div>   
+    <div id="about" class="tab-pane fade">
+    <p>About school and management</p>
+    </div>
+    
+    <div id="contactus" class="tab-pane fade">
+    <p>Contact details</p>
+						<form action="mailerServlet" method="post">
+							<p>Name:</p> <input type="text" name="username" required="required" /><br>
+							<p>Email:</p> <input type="email" name="email" required="required" />
+							<p>Query Summary: </p><input name="summary" type="text"
+								required="required" /><br> 
+							<p>Query Description: </p>
+							<input name="description" type="text" required="required" /><br>
+							<input type="submit">
+						</form>
+					</div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+</body>
+</html>
